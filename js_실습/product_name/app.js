@@ -1,34 +1,15 @@
-let age = 32;
-let userName = "Max";
-let hobbies = ["Sports", "Cooking", "Reading"];
-let job = {
-  title: "Developer",
-  place: "New York",
-  salary: 50000,
-};
+const productNameInputElement = document.getElementById("product-name");
+const remainingCharsElement = document.getElementById("remaining-chars");
 
-let totaladultYears;
+const maxAllowedChars = productNameInputElement.maxLength;
 
-function calculateAdultYears(userAge) {
-  let result;
-  result = userAge - 18;
-  return result;
+function updateRemaingCharacters(event) {
+  const enteredtext = event.target.value;
+  const enteredTextLength = enteredtext.length;
+
+  const remainingCharacters = maxAllowedChars - enteredTextLength;
+
+  remainingCharsElement.textContent = remainingCharacters;
 }
 
-totaladultYears = calculateAdultYears(age);
-console.log(totaladultYears);
-
-age = 45;
-totaladultYears = calculateAdultYears(age);
-
-console.log(totaladultYears);
-
-let person = {
-  name: "Max", //property
-  greet() {
-    //method
-    console.log("Hello!");
-  },
-};
-
-person.greet();
+productNameInputElement.addEventListener("input", updateRemaingCharacters);
