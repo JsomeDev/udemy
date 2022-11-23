@@ -12,5 +12,12 @@
     "cuisine": "indian",
     "website": "http://mygreat.com",
     "description": "amazing"
+  },
+  {
+    "name": "restaurant 3",
+    "address": "nm street 5 ",
+    "cuisine": "mexican",
+    "website": "https://lastcall.com",
+    "description": "amazing good"
   }
 ]
