@@ -1,0 +1,16 @@
+[
+  {
+    "name": "test",
+    "address": "test",
+    "cuisine": "italy",
+    "website": "http://www.google.com",
+    "description": "awesome"
+  },
+  {
+    "name": "test2",
+    "address": "test2",
+    "cuisine": "indian",
+    "website": "http://mygreat.com",
+    "description": "amazing"
+  }
+]
