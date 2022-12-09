@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box; 
+    /* box의 크기가 테두리 기준 */
+}
+
+html {
+    font-family: 'Montserrat', 'sans-serif';
+
+    --color-gray-500: rgb(37, 34, 31);
+}
